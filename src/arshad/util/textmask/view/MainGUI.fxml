@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="350.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="arshad.util.textmask.controller.MainGUIController">
+    <children>
+      <VBox alignment="TOP_CENTER" layoutX="70.0" layoutY="20.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label text="TextMask" textFill="RED">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Label>
+            <Separator prefWidth="200.0" />
+            <HBox prefHeight="17.0" prefWidth="600.0">
+               <children>
+                  <Label text="Input String :">
+                     <HBox.margin>
+                        <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="31.0" prefWidth="588.0">
+               <children>
+                  <TextField fx:id="TF_InputString" prefHeight="25.0" prefWidth="426.0" HBox.hgrow="ALWAYS" />
+                  <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#btn_ApplyMask" prefHeight="25.0" prefWidth="92.0" text="Apply Mask" textAlignment="CENTER" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </VBox.margin>
+            </HBox>
+            <TextArea fx:id="TA_Output" editable="false" prefHeight="294.0" prefWidth="600.0" promptText="Output Byte Array" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets bottom="2.0" left="2.0" right="2.0" top="2.0" />
+               </VBox.margin>
+            </TextArea>
+         </children>
+      </VBox>
+    </children>
+</AnchorPane>
